@@ -12,6 +12,7 @@ This repository brings my Global Hack Week agent challenges into one place. Each
 | [Git Helper Agent](https://github.com/salomonhotegni/git-helper-agent) | Build a Git Commit & PR Agent | Turns local Git diffs into concise Conventional Commit messages and ready-to-paste pull request summaries. | Offline by default; optional Backboard refinement |
 | [Terminal AI Helper](https://github.com/salomonhotegni/terminal-ai-helper) | Build a Terminal AI Helper | Turns plain English into a reviewed terminal command, explains its risk, and asks before running it. | Backboard required |
 | [Long-Term Memory Agent](https://github.com/salomonhotegni/long-term-memory-agent) | Give Your Agent Long-Term Memory | Remembers preferences and completed interactions across separate sessions with a transparent local SQLite database. | Backboard required for replies; memory management works offline |
+| [Human-in-the-Loop Agent](https://github.com/salomonhotegni/human-in-the-loop-agent) | Build a Human-in-the-Loop Workflow | Pauses for explicit human approval before sensitive actions like emails or purchases, while safe requests run automatically. | Backboard required for planning; approval gate is enforced locally |
 
 ## Get started
 

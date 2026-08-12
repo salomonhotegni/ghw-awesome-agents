@@ -11,3 +11,6 @@
 	path = agents/long-term-memory-agent
 	url = https://github.com/salomonhotegni/long-term-memory-agent.git
 	branch = main
+[submodule "agents/human-in-the-loop-agent"]
+	path = agents/human-in-the-loop-agent
+	url = https://github.com/salomonhotegni/human-in-the-loop-agent.git
