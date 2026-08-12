@@ -71,7 +71,7 @@ feat(diff-parser): add rename parsing
 
 The optional Backboard provider adds AI refinement while keeping offline output as the safe default. See the [project documentation](https://github.com/salomonhotegni/git-helper-agent#optional-ai-refinement) for setup.
 
-### Terminal AI Helper
+### Terminal AI Helper 
 
 Requirements: Python 3.10+, the Backboard SDK, and a `BACKBOARD_API_KEY` environment variable.
 
