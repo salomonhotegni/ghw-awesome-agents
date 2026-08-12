@@ -4,3 +4,6 @@
 [submodule "agents/terminal-ai-helper"]
 	path = agents/terminal-ai-helper
 	url = https://github.com/salomonhotegni/terminal-ai-helper.git
+[submodule "agents/final-boss"]
+	path = agents/final-boss
+	url = https://github.com/salomonhotegni/final-boss.git

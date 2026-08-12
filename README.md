@@ -1,6 +1,6 @@
 # GHW Awesome Agents ([Global Hack Week: Agents Week](https://ghw.mlh.com/schedule))
 
-> A growing collection of focused AI command-line agents built for [MLH Global Hack Week: Agents Week](https://ghw.mlh.com/schedule).
+> A growing collection of focused AI agents and applications built for [MLH Global Hack Week: Agents Week](https://ghw.mlh.com/schedule).
 
 This repository brings my Global Hack Week agent challenges into one place. Each project is independently usable, tested, and maintained in its own GitHub repository; this collection pins a known version of every project with Git submodules.
 
@@ -8,6 +8,7 @@ This repository brings my Global Hack Week agent challenges into one place. Each
 
 | Project | Challenge | What it does | AI mode |
 |---|---|---|---|
+| [LabCouncil](https://github.com/salomonhotegni/final-boss) | Challenge 6: Final Boss | Coordinates five specialist agents to turn a research idea into a reviewed experiment plan and scored decision. | Backboard required; five persistent assistants |
 | [Git Helper Agent](https://github.com/salomonhotegni/git-helper-agent) | Build a Git Commit & PR Agent | Turns local Git diffs into concise Conventional Commit messages and ready-to-paste pull request summaries. | Offline by default; optional Backboard refinement |
 | [Terminal AI Helper](https://github.com/salomonhotegni/terminal-ai-helper) | Build a Terminal AI Helper | Turns plain English into a reviewed terminal command, explains its risk, and asks before running it. | Backboard required |
 
@@ -30,6 +31,23 @@ git submodule update --init --recursive
 Each directory under `agents/` is a complete project pinned to a tested commit. Follow the README inside an agent for its full setup, usage, safety notes, and development workflow.
 
 ## Try the agents
+
+Run each example from the collection root.
+
+### LabCouncil
+
+Requirements: Python 3.10+ and a Backboard API key. LabCouncil streams a five-agent research-design workflow through a local Flask interface.
+
+```bash
+cd agents/final-boss
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+export BACKBOARD_API_KEY="your-api-key"
+python app.py
+```
+
+Open <http://127.0.0.1:5000>. The Research Scientist, Skeptical Reviewer, Experimentalist, Resource Manager, and Program Chair collaborate to produce a seven-section report and final decision. See the [LabCouncil documentation](https://github.com/salomonhotegni/final-boss) for its workflow and API.
 
 ### Git Helper Agent
 
@@ -57,7 +75,7 @@ The optional Backboard provider adds AI refinement while keeping offline output 
 Requirements: Python 3.10+, the Backboard SDK, and a `BACKBOARD_API_KEY` environment variable.
 
 ```bash
-cd ../terminal-ai-helper
+cd agents/terminal-ai-helper
 python -m pip install -r requirements.txt
 export BACKBOARD_API_KEY="your-api-key"
 python terminal_helper.py --dry-run "Find all files larger than 100MB"
@@ -78,6 +96,7 @@ ghw-awesome-agents/
 ├── .gitmodules
 ├── README.md
 └── agents/
+    ├── final-boss/             # Five-agent research council
     ├── git-helper-agent/       # Git commit and PR summaries
     └── terminal-ai-helper/     # English-to-terminal commands
 ```
@@ -91,6 +110,14 @@ Why submodules?
 ## Run the tests
 
 The agents have separate environments and test commands.
+
+LabCouncil:
+
+```bash
+cd agents/final-boss
+python -m pip install -r requirements.txt
+python -m pytest -q
+```
 
 Git Helper Agent:
 
@@ -130,4 +157,4 @@ git commit -m "chore: update AGENT-NAME"
 
 ## License
 
-Each agent is independently licensed under the MIT License. See the `LICENSE` file in the corresponding project repository.
+Licensing is defined by each independent project. Check the corresponding repository for its license terms before reuse; Git Helper Agent and Terminal AI Helper include MIT licenses.
