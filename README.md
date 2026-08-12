@@ -1,4 +1,4 @@
-# GHW Awesome Agents
+# GHW Awesome Agents ([Global Hack Week: Agents Week](https://ghw.mlh.com/schedule))
 
 > A growing collection of focused AI command-line agents built for [MLH Global Hack Week: Agents Week](https://ghw.mlh.com/schedule).
 
