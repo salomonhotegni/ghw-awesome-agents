@@ -1,0 +1,6 @@
+[submodule "agents/git-helper-agent"]
+	path = agents/git-helper-agent
+	url = https://github.com/salomonhotegni/git-helper-agent.git
+[submodule "agents/terminal-ai-helper"]
+	path = agents/terminal-ai-helper
+	url = https://github.com/salomonhotegni/terminal-ai-helper.git
