@@ -7,3 +7,7 @@
 [submodule "agents/final-boss"]
 	path = agents/final-boss
 	url = https://github.com/salomonhotegni/final-boss.git
+[submodule "agents/long-term-memory-agent"]
+	path = agents/long-term-memory-agent
+	url = https://github.com/salomonhotegni/long-term-memory-agent.git
+	branch = main
